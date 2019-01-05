@@ -88,6 +88,10 @@ input {
   
 }
 
+input:focus {
+outline: 2px solid #b1d5e0;
+}
+
 /*so entry is next to percent sign*/
 input:first-of-type {
 	text-align: right;
