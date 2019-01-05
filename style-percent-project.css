@@ -10,11 +10,18 @@ section, article, nav, aside, header, footer, main { display: block;  }
 
 
 body {
-  background-color: black;
-  color: gray;
+  background-color: #D2D2D2;
+  color: #3F3E3E;
   margin: 8% auto 10% auto;
   letter-spacing: 1px;
   max-width: 400px;
+  padding: 1% calc(2% + 2vw);
+	
+  -webkit-user-select: none;  
+  -moz-user-select: none;     
+  -ms-user-select: none;      
+  user-select: none;         
+  
 }
 
 h1 {
@@ -26,46 +33,111 @@ h1 {
 
 #resultsDisplay {
 
-  min-height: 50px;
-  background-color: rgb(100, 100, 100);
-  color: rgb(230, 230, 230);
+  min-height: 65px;
+  background-color: #B8B8B8;
+  color: #1F1F1F;
   overflow: auto;
-  width: 96%;
   margin: 0 auto 5% auto;
-  padding: 10px;
-  font-size: 1.25rem;
+  padding: 15px 10px 10px 20px;;
+  font-size: 1.90rem;
+	letter-spacing: 2px;
+	
+/*  border-radius: 15px;*/
 }
 
-#small-font {
-  font-size: 80%;
-  width: 96%;
-  margin: 0 auto 1% auto;
-}
+
 
 form {
   display: flex;
   flex-flow: column nowrap;
-  padding: 1% 2%;
+ 
 }
 
 label {
     margin-top: 5%;
+	position: absolute; /*leave it for accessibility*/
+	left: -1000px;
 }
 
+.text__whats-percent {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 5%;
+	margin-top: 5%;
+	font-size: 1.75rem;
+}
+
+
+
 input {
-  background-color: rgb(200, 200, 200);
   font-size: 1.40rem;
   height: 50px;
-  border: none;
   display: block;
   margin-bottom: 3%;
   margin-top: 5px;
- padding: 5px;
+  padding: 5px;
+  border-color: transparent;  /*flat design*/
+	
+	/*select all input upuon focus*/
+	 
+  -webkit-user-select: all;  
+  -moz-user-select: all;     
+  -ms-user-select: all;      
+  user-select: all;         
   
 }
+
+/*so entry is next to percent sign*/
+input:first-of-type {
+	text-align: right;
+}
+
+#percent { 
+	
+	background-image: url("images/percent-large.PNG");
+background-repeat: no-repeat;
+background-position: right 3px; /*positions image to right*/
+background-size: 42px 45px;
+	
+	padding-right: 50px;
+	font-size: 2rem;
+	
+}
+
+#prePercent { 
+	
+	background-image: url("images/cash-large.PNG");
+	background-repeat: no-repeat;
+	background-position: left 7px;
+	background-size: 26px 36px;
+	padding-left: 30px;
+	font-size: 2rem;
+	
+}
+
+
 
 button {
   margin-top: 10%;
   font-size: 120%;
   height: 50px;
+  letter-spacing: 2px;
+}
+
+footer {
+	margin-top: 30%;
+	text-align: center;
+	font-size: small;
+}
+
+footer a {
+	color: black;
+	text-decoration: none;
+	font-weight: 700;
+
+}
+
+footer a:hover {
+	text-decoration: underline;
 }

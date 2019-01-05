@@ -1,8 +1,3 @@
-
-var goButton = document.getElementById("goButton");
-
-
-
 //funciton 
 function calculatePercentFunc() {
 
@@ -12,13 +7,13 @@ var enterPrePercent = document.getElementById("prePercent").value;
   
 var percent = enterPercent / 100 * enterPrePercent;
 
-  var resultsDisplay = document.getElementsByTagName("p")[1];
+  var resultsDisplay = document.getElementsByTagName("p")[0];
   
   //display total percent but as a fixed, 2-decimal string.
- resultsDisplay.innerHTML = +percent.toFixed(2);
+ resultsDisplay.innerHTML = `\$${+percent.toFixed(2)}`;
 
   //enter valid number error message
-    if(Number.isNaN(+enterPercent) || +enterPrePercent==0 || Number.isNaN(+enterPrePercent) || +enterPrePercent==0 ) resultsDisplay.innerHTML = "Enter valid number";
+    if(Number.isNaN(+enterPercent) || Number.isNaN(+enterPrePercent) ) resultsDisplay.innerHTML = "Enter valid number";
   
-} //end of function
+} 
 
