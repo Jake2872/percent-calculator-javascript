@@ -110,7 +110,7 @@ input:first-of-type {
 
 #percent { 
 	
-	background-image: url("images/percent-large.PNG");
+	background-image: url("images/percent-large.png");
 background-repeat: no-repeat;
 background-position: right 3px; /*positions image to right*/
 background-size: 42px 45px;
@@ -131,6 +131,9 @@ background-size: 42px 45px;
 	
 }
 
+input:focus {
+outline: 2px solid #b1d5e0;
+}
 
 
 button {
