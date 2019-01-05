@@ -34,15 +34,14 @@ h1 {
 #resultsDisplay {
 
   min-height: 65px;
-  background-color: #B8B8B8;
-  color: #1F1F1F;
+  background-color: #CBCBCB;
+  color: #383838;
   overflow: auto;
   margin: 0 auto 5% auto;
   padding: 15px 10px 10px 20px;;
   font-size: 1.90rem;
 	letter-spacing: 2px;
 	
-/*  border-radius: 15px;*/
 }
 
 
@@ -136,12 +135,12 @@ outline: 2px solid #b1d5e0;
 }
 
 
-button {
+/*button {
   margin-top: 10%;
   font-size: 120%;
   height: 50px;
   letter-spacing: 2px;
-}
+}*/
 
 footer {
 	margin-top: 30%;

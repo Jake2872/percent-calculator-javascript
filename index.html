@@ -21,14 +21,14 @@
   
   <p class="text__whats-percent">What&#39;s </p>
  <label for="percent">Enter percentage &lpar;without &percnt; sign&rpar;</label>
-  <input type="text" id="percent" name="percent" autocomplete="off" placeholder="&percnt;">
+  <input type="text" id="percent" name="percent" autocomplete="off" placeholder="&percnt;" onkeypress="calculatePercentFunc()" onkeyup="calculatePercentFunc()">
   
    <p class="text__whats-percent">Of</p>
   <label for="prePercent">Enter number to find the percentage of</label>
-  <input type="text" id="prePercent" name="number" autocomplete="off" placeholder="&dollar;">
+  <input type="text" id="prePercent" name="number" autocomplete="off" placeholder="&dollar;" onkeypress="calculatePercentFunc()" onkeyup="calculatePercentFunc()">
    
   
-  <button type="button" id="goButton" onclick="calculatePercentFunc()">FIND OUT</button>
+  <!--<button type="button" id="goButton" onclick="calculatePercentFunc()">FIND OUT</button>-->
   
 </form>
     
