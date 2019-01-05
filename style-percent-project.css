@@ -88,9 +88,20 @@ input {
   
 }
 
-input:focus {
-outline: 2px solid #b1d5e0;
+/*The current percent and dollar signs are background images, which don't change colors with dark mode. Placeholder adds the same signs as the images but in text that's only visible on dark backgrounds. This is in addition to (off-screen) yet still "visible-to-screen-readers" labels  */
+input::placeholder {
+	color: white;
+	opacity: 1;
+	font-size: 1.4rem;
 }
+
+input::placeholder:first-of-type {
+		
+	text-align: right;
+
+}
+
+
 
 /*so entry is next to percent sign*/
 input:first-of-type {
@@ -99,7 +110,7 @@ input:first-of-type {
 
 #percent { 
 	
-	background-image: url("images/percent-large.png");
+	background-image: url("images/percent-large.PNG");
 background-repeat: no-repeat;
 background-position: right 3px; /*positions image to right*/
 background-size: 42px 45px;
