@@ -16,12 +16,7 @@ body {
   letter-spacing: 1px;
   max-width: 400px;
   padding: 1% calc(2% + 2vw);
-	
-  -webkit-user-select: none;  
-  -moz-user-select: none;     
-  -ms-user-select: none;      
-  user-select: none;         
-  
+
 }
 
 h1 {
@@ -77,14 +72,7 @@ input {
   margin-top: 5px;
   padding: 5px;
   border-color: transparent;  /*flat design*/
-	
-	/*select all input upuon focus*/
 	 
-  -webkit-user-select: all;  
-  -moz-user-select: all;     
-  -ms-user-select: all;      
-  user-select: all;         
-  
 }
 
 /*The current percent and dollar signs are background images, which don't change colors with dark mode. Placeholder adds the same signs as the images but in text that's only visible on dark backgrounds. This is in addition to (off-screen) yet still "visible-to-screen-readers" labels  */
@@ -147,10 +135,20 @@ outline: 2px solid #b1d5e0;
   border: 1px solid #a5a5a5;
   padding-top: 12px;
   background-color: #eeeeee;
+ -webkit-tap-highlight-color: transparent;
 }
 
 #button--done:active {
 	border-style: inset;
+}
+
+h1, .text__whats-percent, a {
+
+ -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
 }
 
 footer {
